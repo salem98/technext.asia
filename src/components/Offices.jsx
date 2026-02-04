@@ -1,25 +1,25 @@
 export default function Offices() {
   const offices = [
     {
+      country: 'Singapore',
+      flag: '🇸🇬',
+      website: 'technext.asia',
+      address: '261 Waterloo Street #03-32, Singapore 180261',
+      phone: '+65 8427 2549'
+    },
+    {
       country: 'Vietnam',
       flag: '🇻🇳',
       website: 'technext.asia',
-      address: 'District 1, Ho Chi Minh City',
-      phone: '+84 28 1234 5678'
-    },
-    {
-      country: 'Singapore',
-      flag: '🇸🇬',
-      website: 'technext.sg',
-      address: '3 Coleman Street, #03-24',
-      phone: '+65 6789 0123'
+      address: 'Ho Chi Minh City',
+      phone: '+84 792 030 623'
     },
     {
       country: 'Australia',
       flag: '🇦🇺',
-      website: 'technext.com.au',
-      address: 'Sydney CBD, NSW',
-      phone: '+61 2 9876 5432'
+      website: 'technext.asia',
+      address: 'Sydney, NSW',
+      phone: '+61 2 9234 5288'
     }
   ]
 
