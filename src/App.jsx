@@ -6,6 +6,7 @@ import SplashScreen from './components/SplashScreen'
 // Lazy load below-the-fold components for better performance
 const Stats = lazy(() => import('./components/Stats'))
 const WhyChooseUs = lazy(() => import('./components/WhyChooseUs'))
+const CorporateStructure = lazy(() => import('./components/CorporateStructure'))
 const Services = lazy(() => import('./components/Services'))
 const Technologies = lazy(() => import('./components/Technologies'))
 const Testimonials = lazy(() => import('./components/Testimonials'))
@@ -84,6 +85,9 @@ export default function App() {
                     </Suspense>
                     <Suspense fallback={<SectionLoader />}>
                         <WhyChooseUs />
+                    </Suspense>
+                    <Suspense fallback={<SectionLoader />}>
+                        <CorporateStructure />
                     </Suspense>
                     <Suspense fallback={<SectionLoader />}>
                         <Services />
