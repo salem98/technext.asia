@@ -35,10 +35,10 @@ export default function Header() {
   ]
 
   return (
-    <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
+    <header className={`header ${isScrolled ? 'header--scrolled' : ''}`} role="banner">
       <div className="container">
-        <nav className="nav">
-          <a href="#" className="logo">
+        <nav className="nav" role="navigation" aria-label="Main navigation">
+          <a href="#" className="logo" aria-label="Tech Next Solutions - Home">
             <span className="logo-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
@@ -47,9 +47,9 @@ export default function Header() {
             <span className="logo-text">Tech Next</span>
           </a>
 
-          <ul className="nav-links hide-mobile">
+          <ul className="nav-links hide-mobile" role="list">
             {navLinks.map((link) => (
-              <li key={link.href}>
+              <li key={link.href} role="listitem">
                 <a href={link.href} className="nav-link">{link.label}</a>
               </li>
             ))}

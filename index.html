@@ -170,6 +170,19 @@
 </head>
 
 <body>
+  <!-- PWA: Add to home screen -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Noscript fallback for accessibility -->
+  <noscript>
+    <div style="padding: 2rem; text-align: center; font-family: sans-serif;">
+      <h1>Tech Next Solutions</h1>
+      <p>JavaScript is required to view this website. Please enable JavaScript in your browser settings.</p>
+      <p>Contact us: <a href="tel:+6584272549">+65 8427 2549</a> | <a
+          href="mailto:hello@technext.asia">hello@technext.asia</a></p>
+    </div>
+  </noscript>
+
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
